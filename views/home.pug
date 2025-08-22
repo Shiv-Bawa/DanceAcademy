@@ -1,0 +1,50 @@
+extend base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css   
+
+block content 
+        section#introSection
+            div Welcome To Noor's Dance Academy
+            div.small Dance Sleep Eat Then Repeat
+        
+        
+        
+        
+        section#missionSection
+            h2  Our Mission
+            div.card 
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img 
+                        img(src="/static/images/1.png")
+                    div.content-img
+                        p Dance Perfection is where passion meets precision.We focus on mastering technique, rhythm, and graceful expression. Every step you take brings you closer to your perfect performance.
+
+            div.card 
+                h3 Dance the way you live
+                div.card-box
+                    div.card-img 
+                        img(src="/static/images/2.jpg")
+                    div.content-img
+                        p Dance Perfection is where passion meets precision.We focus on mastering technique, rhythm, and graceful expression. Every step you take brings you closer to your perfect performance.
+                
+            div.card 
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img 
+                        img(src="/static/images/3.jpg")
+                    div.content-img
+                        p Dance Perfection is where passion meets precision.We focus on mastering technique, rhythm, and graceful expression. Every step you take brings you closer to your perfect performance.
+        
+        section#sponsorsSection
+            h2 Our Sponsors
+            div#sponsors 
+                img(src="/static/images/s1.png",alt="Sponsor Image", class="spImage")
+                img(src="/static/images/s2.jpg",alt="Sponsor Image", class="spImage")
+                img(src="/static/images/s3.gif",alt="Sponsor Image", class="spImage")
+                img(src="/static/images/s4.jpg",alt="Sponsor Image", class="spImage")
